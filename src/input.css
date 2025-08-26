@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+
+
+@layer base{
+
+@font-face {
+  font-display: swap; 
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/dm-sans-v16-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/dm-sans-v16-latin-700.woff2') format('woff2'); 
+}
+
+body{
+    @apply text-lg text-gray font-normal leading-[1];
+}
+
+}
+
+
+
+ @theme {
+   --color-cream: #F8E9DD;
+   --color-red: #EC755D;
+   --color-light: #FFFBF6;
+   --color-brown: #382314;
+   --color-gray: #92857A;
+   --color-cyan: #76B5BC;
+   --color-white: #FFFFFF;
+   --color-white-2: #FFFBF6;
+   /* border radius */
+   --radius-20: 1.25rem;
+   /* font families */
+   --default-font-family: "DM Sans", "Arial", sans-serif;
+   /* size */
+   --text-32: 2rem;
+   /* responsive */
+
+
+
+ }
+   
+  @media (max-width: 640px) {
+    .spending-items {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+
